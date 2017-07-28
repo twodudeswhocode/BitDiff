@@ -1,6 +1,6 @@
 {
   "name": "BitDiff",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A coin arbitrage lookup site",
   "private": "true",
   "main": "server.js",
@@ -15,15 +15,10 @@
   "author": "SwitchLove",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.17.2",
     "coin-ticker": "^2.0.3",
     "express": "^4.13.4",
-    "http": "^0.0.0",
-    "morgan": "^1.7.0",
     "nodemon": "^1.9.1",
     "pug": "^2.0.0-rc.2",
-    "request": "^2.81.0",
-    "sprintf-js": "^1.1.1",
     "stylus": "^0.53.0"
   }
 }
