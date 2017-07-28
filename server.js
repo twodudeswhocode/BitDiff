@@ -44,6 +44,6 @@ app.get('/searching', function (req, res, next) {
 	} catch (e) { next(e) }
 })
 
-app.listen(process.env.PORT || 3000, function () {
-  console.log('Listening on http://188.165.135.198:' + (process.env.PORT || 3000))
+app.listen(process.env.PORT || 80, function () {
+  console.log('Listening on http://188.165.135.198:' + (process.env.PORT || 80))
 })
