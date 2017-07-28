@@ -37,7 +37,7 @@ app.get('/searching', function (req, res, next) {
 		}
 		
 		exchange = ["bittrex","poloniex","bitfinex","kraken","okcoin","bitstamp","coinbase"]
-		for(i=0;i<exchange.length-1;i++){
+		for(i=0;i<exchange.length;i++){
 			ticker(exchange[i],coin)
 		}
 		setTimeout( function(){ res.end() }, 2000 );
