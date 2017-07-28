@@ -1,0 +1,29 @@
+{
+  "name": "BitDiff",
+  "version": "1.0.0",
+  "description": "A coin arbitrage lookup site",
+  "private": "true",
+  "main": "server.js",
+  "scripts": {
+    "build-css": "stylus source/stylesheets/index.styl -o static/css",
+    "watch-css": "stylus source/stylesheets/index.styl -o static/css -w",
+    "clean": "rm -rf static/css && mkdir -p static/css",
+    "build": "npm run clean && npm run build-css",
+    "watch": "npm run clean && npm run watch-css & nodemon server -e js,pug",
+    "start": "node server"
+  },
+  "author": "SwitchLove",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "coin-ticker": "^2.0.3",
+    "express": "^4.13.4",
+    "http": "^0.0.0",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.9.1",
+    "pug": "^2.0.0-rc.2",
+    "request": "^2.81.0",
+    "sprintf-js": "^1.1.1",
+    "stylus": "^0.53.0"
+  }
+}
