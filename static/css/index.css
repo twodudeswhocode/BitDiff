@@ -10,6 +10,10 @@ body {
 .header {
   background: url("https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
   background-position: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .header .page-title {
   font-weight: 200;
@@ -19,30 +23,13 @@ body {
   text-transform: uppercase;
   color: #fff;
 }
-.nav {
-  background: #000;
-  text-align: center;
-}
-.nav li {
-  display: inline-block;
-}
-.nav a {
-  display: inline-block;
-  padding: 20px;
-  color: #fff;
-  text-decoration: none;
-}
-.nav a:hover {
-  background-color: #3ab795;
-  text-decoration: underline;
-}
 .main-content {
   margin: 50px auto;
   max-width: 700px;
 }
 .main-content p {
   line-height: 1.6;
-  margin-bottom: 1.7em;
+  margin-bottom: 10px;
 }
 text-align justify,
 .footer {
@@ -66,11 +53,56 @@ text-align justify p,
 }
 #coins {
   text-align: center;
-  padding: 0px 0px 20px;
+  padding: 0px 0px 10px;
 }
 #contact {
   text-align: center;
   margin: 10px auto;
   max-width: 700px;
   font-size: 16px;
+}
+.container {
+  max-width: 700px;
+}
+.row {
+  max-width: 700px;
+  margin: 5px;
+}
+.row-centered {
+  text-align: center;
+}
+.col-centered {
+  display: inline-block;
+  float: none;
+  text-align: left;
+  margin-right: -4px;
+}
+.col-sm-4 {
+  box-shadow: 2px 2px 2px #888;
+  padding: 5px;
+  margin: 5px;
+  width: auto;
+  height: auto;
+}
+h2 {
+  margin: 0px;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+img.centered {
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+p.centered {
+  text-align: center;
+  text-transform: capitalize;
+}
+a.hidemesenpai {
+  color: #444;
 }

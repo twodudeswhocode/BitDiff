@@ -1,18 +1,22 @@
 doctype html
 html
 	head
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
 		link(rel='stylesheet', href='/css/index.css')
+
 		title BitDiff
+		
 	body
 		.header
-			h1.page-title BitDiff!
+			h1.page-title BitDiff
 
-		ul.nav
-			li: a(href='/') Home
-			li: a(href='contact') Contact
-    
 		.main-content
 			block content
 
 		.footer
-			p Copyright © 2020 Switch
+			div.box
+				p.left
+					a.hidemesenpai(href='https://github.com/twodudeswhocode/BitDiff/') Copyright © 2020 twodudeswhocode 
+			div.box
+				p.right
+					a(href='mailto:2dwc.official@gmail.com') Contact Us
