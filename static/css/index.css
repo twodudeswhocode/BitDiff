@@ -88,10 +88,10 @@ h2 {
   margin: 0px;
 }
 .left {
-  text-align: left;
+  float: left;
 }
 .right {
-  text-align: right;
+  float: right;
 }
 img.centered {
   display: block;
