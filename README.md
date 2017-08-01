@@ -1,4 +1,4 @@
-# BitDiff
+# [BitDiff](https://bitdiff.net)
 A coin arbitrage lookup site by [Switch](https://twitter.com/SwitchLove) and [Mouse](https://twitter.com/MouseDoesCrypto).
 
 ### Roadmap
