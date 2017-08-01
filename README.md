@@ -2,7 +2,8 @@
 A coin arbitrage lookup site by [Switch](https://twitter.com/SwitchLove) and [Mouse](https://twitter.com/MouseDoesCrypto).
 
 ### Setup
-```npm i
+```
+npm i
 npm run build
 npm start
 
