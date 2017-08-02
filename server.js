@@ -38,8 +38,8 @@ app.get('/searching', function (req, res, next) {
 					else fprice = Number(found[i].last).toFixed(8)
 			if(found[i].exchange === undefined) html += ''
 				else html += '<div class="col-sm-4 col-centered"><img class="centered" src="/images/' + found[i].exchange + '-ic.png" alt="' + found[i].exchange + '"><p class="centered">' + found[i].exchange + '<br>' + sym + fprice + '</p></div>'
-					if(html === '') html += '<p class="centered">That is not a valid currency.</p>'
 		}
+	if(html === '') html += '<p class="centered">That is not a valid currency.</p>'
 	res.end(html)
 	}
 	function failureCallback(failure) { 
