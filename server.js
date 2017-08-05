@@ -25,10 +25,11 @@ app.get('/searching', function (req, res, next) {
 	sym = '฿'
 	ref = req.query.search.toUpperCase()
 	coin = ref + '_BTC'
-	if(ref === 'BTC') { coin = 'BTC_USD'; }
-	if(ref === 'BTC' || ref == 'USD' || ref == 'USDT') { sym = '$'; }
+	if(ref === '') ref = 'BTC'
+	if(ref === 'BTC') coin = 'BTC_USD'
+	if(ref === 'BTC' || ref == 'USD' || ref == 'USDT') sym = '$'
 	exchanges = ['bittrex','poloniex','bitfinex','kraken','okcoin','bitstamp','coinbase'], exchangesGot = [], exchangesPoll = [], results = []
-	coinPoll = req.query.search.toUpperCase()
+	coinPoll = ref
 	if(coinPoll === 'BTC') coinRef = 'USD'
 		else coinRef = 'BTC'
 	var url = 'https://www.cryptocompare.com/api/data/coinsnapshot/?fsym=' + coinPoll + '&tsym=' + coinRef
